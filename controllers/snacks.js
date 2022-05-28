@@ -2,12 +2,19 @@
 //                      REQUIRE DEPENDENCIES
 ////////////////////////////////////////////////////////////
 const express = require('express');
+const Snack = require('../models/snack');
 const router = express.Router();
 const Snacks = require('../models/snack');
 //                      ROUTES
 ////////////////////////////////////////////////////////////
 ////////////////////////INDEX ////////////////////////
-
+router.get('/', (req, res) => {
+    Snack.find({}, (err, foundSnacks) => {
+        res.render('snacks/index.ejs', {
+            snacks: foundSnacks,
+        });
+    });
+});
 //////////////////////// NEW ////////////////////////
 
 
