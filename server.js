@@ -6,6 +6,7 @@ const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const snacksController = require('./controllers/snacks');
+const { Router } = require('express');
 require('dotenv').config();
 ////////////////////////////////////////////////////////////
 //                      INITITALIZE EXPRESS & PORT
@@ -29,6 +30,7 @@ db.on('disconnected', () => console.log('MONGO is disconnected ;) !'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use('/snacks', snacksController);
+
 ////////////////////////////////////////////////////////////
 //                      ROUTES >>>>>>>>>>IN Controllers
 ////////////////////////////////////////////////////////////
