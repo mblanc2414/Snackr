@@ -7,7 +7,28 @@
     <title>Happy Snackr</title>
 </head>
 <body>
-    
+    <header>
+<h1>Snacks</h1>
+<nav>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/snacks/new">Add new snack</a>
+        </li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <h2>List of Snacks</h2>
+        <ul>
+            <% for (let i = 0; i < snacks.length; i++ ) { %>
+                <li>
+                    <a href="/snacks/<%= snacks[i]._id %> "><%= snacks[i].name %> </a>
+                </li>
+                <% } %>
+        </ul>
+    </main>
 </body>
 </html>
-<!--  -->
