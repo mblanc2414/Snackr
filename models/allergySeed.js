@@ -1,22 +1,27 @@
 // Allergy Friendly Category
 module.exports = [
     {
-      name: 'Beans',
-      brand:
-        'A small pile of beans. Buy more beans for a big pile of beans.',
+      name: 'Granola Minis',
+      brand:'Made Goods',
       img: 'https://imgur.com/LEHS8h3.png',
-      category: ''
+      category: 'Allergy Friendly'
     },
     {
-      name: 'Bones',
-      brand: "It's just a bag of bones.",
+      name: 'Pea Not Cups',
+      brand: "No Whey Foods",
       img: 'https://imgur.com/dalOqwk.png',
-      category: '',
+      category: 'Allergy Friendly',
     },
     {
-      name: 'Bins',
-      brand: 'A stack of colorful bins for your beans and bones.',
+      name: 'Seed Bars',
+      brand: '88 Acres',
       img: 'https://imgur.com/ptWDPO1.png',
-      category: '',
+      category: 'Allergy Friendly',
+    },
+    {
+        name: 'Cheddar Popcorn',
+        brand: 'Boom Chika Pop',
+        img: '',
+        category:'Allergy Friendly'
     }
   ];

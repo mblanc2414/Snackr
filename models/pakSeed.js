@@ -1,22 +1,27 @@
 // Protein Pak'd Category
 module.exports = [
     {
-      name: 'Beans',
-      brand:
-        'A small pile of beans. Buy more beans for a big pile of beans.',
+      name: 'Ranch Tortilla Chips',
+      brand:'Quest',
       img: 'https://imgur.com/LEHS8h3.png',
-      category: ''
+      category: 'Protien Pakd'
     },
     {
-      name: 'Bones',
-      brand: "It's just a bag of bones.",
+      name: 'Dark Rasberry Protein Bites',
+      brand: 'Enjoy Life',
       img: 'https://imgur.com/dalOqwk.png',
-      category: '',
+      category: 'Protien Pakd',
     },
     {
-      name: 'Bins',
-      brand: 'A stack of colorful bins for your beans and bones.',
+      name: 'Bada Bean Bada Boom Spicy Wasabi Crunchy Broad Beans',
+      brand: 'Enlightened',
       img: 'https://imgur.com/ptWDPO1.png',
-      category: '',
+      category: 'Protien Pakd',
+    },
+    {
+        name: 'Original Beef Jerky',
+        brand: 'Field Trip',
+        img: '',
+        category: 'Protien Pakd',
     }
   ];

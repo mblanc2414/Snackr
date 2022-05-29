@@ -1,22 +1,28 @@
 // Sweet & Salty Category
 module.exports = [
     {
-      name: 'Beans',
+      name: 'Boomchickapop Sweet & Salty Kettle Corn',
       brand:
-        'A small pile of beans. Buy more beans for a big pile of beans.',
-      img: 'https://imgur.com/LEHS8h3.png',
-      category: ''
+        'Angies',
+      img: '',
+      category: 'Sweet & Salty Snacks'
     },
     {
-      name: 'Bones',
-      brand: "It's just a bag of bones.",
-      img: 'https://imgur.com/dalOqwk.png',
-      category: '',
+      name: 'Sweet and Salty Caramel Snacks',
+      brand: "Bugles ",
+      img: '',
+      category: 'Sweet & Salty Snacks',
     },
     {
-      name: 'Bins',
-      brand: 'A stack of colorful bins for your beans and bones.',
-      img: 'https://imgur.com/ptWDPO1.png',
-      category: '',
-    }
+      name: ' Sweet & Salty Dark Chocolate-Peanut & Almond Granola Bars',
+      brand: 'Nature Valley',
+      img: '',
+      category: 'Sweet & Salty Snacks',
+    },
+    {
+        name: ' Sweet n Salty Snack Mix Honey Nut ',
+        brand: 'Chex Mix',
+        img: '',
+        category: 'Sweet & Salty Snacks',
+      }
   ];
