@@ -4,20 +4,24 @@
 const express = require('express');
 const Snack = require('../models/snack');
 const router = express.Router();
-const Snacks = require('../models/snack');
+const sweet = require('../models/sweetSeed')
+const salt = require('../models/saltSeed')
+const pak = require('../models/pakSeed')
+const allergy = require('../models/allergySeed')
+const party = require('../models/partySeed')
 //                      ROUTES
 ////////////////////////////////////////////////////////////
 ////////////////////////INDEX ////////////////////////
 router.get('/', (req, res) => {
     Snack.find({}, (err, foundSnacks) => {
-        res.render('snacks/index.ejs', {
+        res.render('index.ejs', {
             snacks: foundSnacks,
         });
     });
 });
 //////////////////////// NEW ////////////////////////
 router.get('/new', (req, res) => {
-    res.render('snacks/new.ejs');
+    res.render('new.ejs');
 });
 
 //////////////////////// DELETE ////////////////////////

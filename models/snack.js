@@ -1,4 +1,4 @@
-// This requires mongoose for user info input
+// This requires mongoose for user info
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 // This allows user to add info to database
