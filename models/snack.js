@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const snackSchema = new Schema({
 name: { type: String, required: true },
 brand: { type: String, required: true  },
+img: { type: String, required: false},
 category: { type: String, required: true  },
 })
 

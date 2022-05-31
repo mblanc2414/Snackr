@@ -11,14 +11,26 @@ const allergy = require('../models/allergySeed')
 const party = require('../models/partySeed')
 //                      ROUTES
 ////////////////////////////////////////////////////////////
+///// SEED ROUTE/////
+const snackSeed = require('./models/Seed.js');
+
+app.get('/books/seed', (req, res) => {
+	Book.deleteMany({}, (error, allBooks) => {});
+
+	Book.create(bookSeed, (error, data) => {
+		res.redirect('/books');
+	});
+});
 ////////////////////////INDEX ////////////////////////
 router.get('/', (req, res) => {
-    Snack.find({}, (err, foundSnacks) => {
+    Snack.find({}, (err, allSnacks) => {
         res.render('index.ejs', {
-            snacks: foundSnacks,
+            snacks: allSnacks,
         });
     });
 });
+
+
 //////////////////////// NEW ////////////////////////
 router.get('/new', (req, res) => {
     res.render('new.ejs');
@@ -56,8 +68,8 @@ router.get('/:id/edit', (req, res) => {
 //////////////////////// SHOW ////////////////////////////
 router.get('/:id', (req, res) => {
     Snack.findById(req.params.id, (err, foundSnack) => {
-        res.render('snacks/show.ejs', {
-            snack: foundSnack,
+        res.render('show.ejs', {
+            snacks: foundSnack,
         });
     });
 });
