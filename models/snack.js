@@ -6,7 +6,7 @@ const snackSchema = new Schema({
 name: { type: String, required: true },
 brand: { type: String, required: true  },
 img: { type: String, required: false},
-category: { type: String, required: true  },
+category: { type: String, required: true },
 })
 
 const Snack = mongoose.model('Snack', snackSchema);

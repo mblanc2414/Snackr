@@ -23,16 +23,17 @@
     <main>
         <h2>List of Snacks</h2>
         <ul>
-            <% for (let i = 0; i < snacks.length; i++ ) { %>
-               
-                    <a href="../models/sweetSeed.js snack[i]._id %> "> Sweet</a>
-                    <a href="../models/saltSeed.js snack[i]._id %> ">Salty</a>
-                    <a href="../models/ssSeed.js snack[i]._id %> ">Sweet & Salty </a>
-                    <a href="../models/pakSeed.js snack[i]._id %> ">Protein Pak'd </a>
-                    <a href="../models/allergySeed.js snack[i]._id %> ">Allergy Friendly</a>
-                    <a href="../models/partySeed.js snack[i]._id %> ">Partytime </a>
-               
-                <% } %>
+           
+<!-- first part of href calls category, second part shows category -->
+            
+                <!-- do href snacks/name of category -->
+                <a href="/snacks/sweet-&-salty">Sweet & Salty</a>
+                <a href="/snacks/sweet">Sweet</a>
+                <a href="/snacks/salty">Salty</a>
+                <a href="/snacks/protein-pakd">Protein Pak'd</a>
+                <a href="/snacks/allergy-friendly">Allergy Friendly</a>
+                <a href="/snacks/partytime">Partytime</a>
+                
         </ul>
     </main>
 </body>

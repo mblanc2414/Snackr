@@ -4,21 +4,16 @@
 const express = require('express');
 const Snack = require('../models/snack');
 const router = express.Router();
-const sweet = require('../models/sweetSeed')
-const salt = require('../models/saltSeed')
-const pak = require('../models/pakSeed')
-const allergy = require('../models/allergySeed')
-const party = require('../models/partySeed')
+const allSnacks = require('../models/allSnacks')
+
 //                      ROUTES
 ////////////////////////////////////////////////////////////
 ///// SEED ROUTE/////
-const snackSeed = require('./models/Seed.js');
+router.get('/seed', (req, res) => {
+	Snack.deleteMany({}, (error, allSnacks) => {});
 
-app.get('/books/seed', (req, res) => {
-	Book.deleteMany({}, (error, allBooks) => {});
-
-	Book.create(bookSeed, (error, data) => {
-		res.redirect('/books');
+	Snack.create(allSnacks, (error, data) => {
+		res.redirect('/snacks');
 	});
 });
 ////////////////////////INDEX ////////////////////////
