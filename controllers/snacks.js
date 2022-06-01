@@ -8,7 +8,7 @@ const allSnacks = require('../models/allSnacks')
 
 //                      ROUTES
 ////////////////////////////////////////////////////////////
-///// SEED ROUTE/////
+////////////////////// SEED ROUTE///////////////////////////////////
 router.get('/seed', (req, res) => {
 	Snack.deleteMany({}, (error, allSnacks) => {});
 
@@ -61,9 +61,49 @@ router.get('/:id/edit', (req, res) => {
 });
 
 //////////////////////// SHOW ////////////////////////////
-router.get('/:id', (req, res) => {
-    Snack.findById(req.params.id, (err, foundSnack) => {
-        res.render('show.ejs', {
+router.get('/sweet', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('sweetViews/index.ejs', {
+            snacks: foundSnack,
+        });
+    });
+});
+// Salty Snack Show route/////////
+router.get('/salty', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('saltyViews/index.ejs', {
+            snacks: foundSnack,
+        });
+    });
+});
+// Sweet & Salty Snack Route////
+router.get('/sweet-&-salty', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('ssViews/index.ejs', {
+            snacks: foundSnack,
+        });
+    });
+});
+// Partytime Snacks route///
+router.get('/partytime', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('partyViews/index.ejs', {
+            snacks: foundSnack,
+        });
+    });
+});
+// Protein Pak'd snacks /////
+router.get('/protein-pakd', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('pakViews/index.ejs', {
+            snacks: foundSnack,
+        });
+    });
+});
+// Allergy Friendly snacks route////
+router.get('/allergy-friendly', (req, res) => {
+    Snack.find({},(err, foundSnack) => {
+        res.render('allergyViews/index.ejs', {
             snacks: foundSnack,
         });
     });

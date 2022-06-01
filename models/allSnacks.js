@@ -1,4 +1,4 @@
-// Sweet Category
+// allSnacks Category
 module.exports = [
     {
         name: 'Muddy Snacks',
@@ -103,25 +103,25 @@ module.exports = [
         name: 'Ranch Tortilla Chips',
         brand: 'Quest',
         img: 'https://imgur.com/LEHS8h3.png',
-        category: 'Protien Pakd'
+        category: 'Protein Pakd'
     },
     {
         name: 'Dark Rasberry Protein Bites',
         brand: 'Enjoy Life',
         img: 'https://imgur.com/dalOqwk.png',
-        category: 'Protien Pakd',
+        category: 'Protein Pakd',
     },
     {
         name: 'Bada Bean Bada Boom Spicy Wasabi Crunchy Broad Beans',
         brand: 'Enlightened',
         img: 'https://imgur.com/ptWDPO1.png',
-        category: 'Protien Pakd',
+        category: 'Protein Pakd',
     },
     {
         name: 'Original Beef Jerky',
         brand: 'Field Trip',
         img: '',
-        category: 'Protien Pakd',
+        category: 'Protein Pakd',
     },
 
     {
@@ -149,3 +149,4 @@ module.exports = [
         category: 'Partytime Snacks',
     }
 ];
+console.log(module);

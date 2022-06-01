@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-<h1>Happy Snackr</a></h1>
+<h1><a href="/">Happy Snackr</a></h1>
 <nav>
     <ul>
         <li>
@@ -23,17 +23,13 @@
     <main>
         <h2>List of Snacks</h2>
         <ul>
-           
-
-            
-                <!-- do href snacks/name of category -->
-                <a href="/snacks/sweet-&-salty">Sweet & Salty</a>
-                <a href="/snacks/sweet">Sweet</a>
-                <a href="/snacks/salty">Salty</a>
-                <a href="/snacks/protein-pakd">Protein Pak'd</a>
-                <a href="/snacks/allergy-friendly">Allergy Friendly</a>
-                <a href="/snacks/partytime">Partytime</a>
+            <% for (let i = 0; i < snacks.length; i++ ) { %>
+                <% if (snacks[i].category === 'Allergy Friendly'){ %>
+                   <a href="/snacks/<%= snacks[i]._id %> "><%= snacks[i].name %> </a>
+               <% } %>
+                   
                 
+                <% } %>
         </ul>
     </main>
 </body>

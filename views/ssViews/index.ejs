@@ -23,12 +23,13 @@
     <main>
         <h2>List of Snacks</h2>
         <ul>
-            <!-- if statement inside of for loop, for loop maps through entire array, if statement checks name of category -->
-           <% for (let i = 0; i < snacks.length; i++ ) { %>
-            <li>
-                <a href="/snacks/<%= snacks[i]._id %> "><%= snacks[i].name %> </a>
-            </li>
-            <% } %>
+            <% for (let i = 0; i < snacks.length; i++ ) { %>
+                <% if (snacks[i].category === 'Sweet & Salty Snacks'){ %>
+                   <a href="/snacks/<%= snacks[i]._id %> "><%= snacks[i].name %> </a>
+               <% } %>
+                   
+                
+                <% } %>
         </ul>
     </main>
 </body>
