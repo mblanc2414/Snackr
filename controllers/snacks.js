@@ -34,7 +34,7 @@ router.get('/new', (req, res) => {
 //////////////////////// DELETE ////////////////////////
 router.delete('/:id', (req, res) => {
     Snack.findByIdAndRemove(req.params.id, () => {
-        res.redirect('/s');
+        res.redirect('/Snacks');
     })
 })
 
